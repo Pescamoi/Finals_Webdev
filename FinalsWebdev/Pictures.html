@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Finals</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: copperplate, Helvetica, sans-serif;
+    } 
+
+    /* Style the header */
+    header {
+      background-color: lightblue;
+      padding: 20px;
+      text-align: center;
+      font-size: 25px;
+      color: black;
+      font-family: copperplate;
+    }
+    .tPictures {
+  align-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: none;
+  border-collapse: collapse;
+}
+img {
+  display:left;
+  gap: 25px;
+ height: 171px;
+ width: 171px;
+ margin: 0px 15px 12px 12px;
+}
+
+    /* Create two columns/boxes that floats next to each other */
+    nav {
+      float: left;
+      width: 20%;
+      height: 1000px; /* only for demonstration, should be removed */
+      background: #ffa500;
+      padding: 30px;
+    }
+
+    /* Style the list inside the menu */
+    nav ul {
+      list-style-type: none;
+      padding: 20px ;
+     
+      
+    }
+
+    article {
+      float: left;
+      padding: 10px;
+      width: 80%;
+      background-color: #ff6666 ;
+      height: 1000px; 
+      font-family: Garamond,serif;
+      font-size: 18px;/* only for demonstration, should be removed */
+
+    }
+
+    /* Clear floats after the columns */
+    section::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Style the footer */
+    footer {
+      background-color: lightblue ;
+      padding: 10px;
+      text-align: center;
+      color: black;
+    }
+
+    /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+    @media (max-width: 600px) {
+      nav, article {
+        width: 100%;
+        height: auto;
+   }
+ }
+   a:hover {
+    color: blue;
+   }
+   h1 {
+    font-size: 30px;
+   }
+  button {
+  background-color: lightblue;
+  color: black;
+  padding:12px 18px;
+  margin:8px 0;
+  border:outset;
+  cursor:pointer;
+  width:100%;
+  font-size: 18px;
+  font-family: copperplate;
+  display:block;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: relative;
+  opacity: 0;
+  top: 0;
+  right: -30px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 10px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+} 
+input[type=text], input[type=text] {
+  width: 40%;
+  padding: 14px 15px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.button1 {
+  background-color: lightblue;
+  color: black;
+  padding: 14px 15px;
+  margin: 1px 0;
+  border: none;
+  cursor: pointer;
+  width: 15%;
+  
+  </style>
+</head>
+<body>
+
+<header>
+  <h2>Pictures</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><button class="button" style="vertical-align: middle;" onclick="document.location='home.html'"><span>Home</span></button></li>
+      <li><button class="button" style="vertical-align: middle;" onclick="document.location='login.html'">Login</button></li>
+      <li><button class="button" style="vertical-align: middle;" onclick="document.location='register.html'"><span>Register</span> </button></li>
+      <li><button class="button" style="vertical-align: middle;" onclick="document.location='pictures.html'"><span>Pictures</span> </button></li>
+      <li><button class="button" style="vertical-align: middle;" onclick="document.location='video.html'"><span>Videos</span></button></li>
+      <li><button class="button" style="vertical-align: middle;" onclick="document.location='music.html'"><span>Music</span> </button></li>
+    </ul>
+  </nav>
+  <article>
+    <div>
+    <table class="tPictures">
+        <tr>
+            <th colspan="5"> Pictures <hr></th>
+        </tr>
+        <tr>
+            <td><img src="pic1.JPG"></td>
+            <td><img src="pic2.jpg"></td>
+            <td><img src="pic3.jpg"></td>
+            <td><img src="pic4.jpg"></td>
+            <td><img src="pic5.jpg"></td>
+        </tr>
+        <tr>
+            <td><img src="pic6.jpg"></td>
+            <td><img src="pic7.jpg"></td>
+            <td><img src="pic8.jpg"></td>
+            <td><img src="pic9.jpg"></td>
+            <td><img src="pic10.jpg"></td>
+        </tr>
+        <tr>
+            <td><img src="pic11.jpg"></td>
+            <td><img src="pic12.jpg"></td>
+            <td><img src="pic13.jpg"></td>
+            <td><img src="pic14.jpg"></td>
+            <td><img src="pic15.jpg"></td>
+        </tr>
+        <tr>
+            <td><img src="pic16.jpg"></td>
+            <td><img src="pic17.jpg"></td>
+            <td><img src="pic18.jpg"></td>
+            <td><img src="pic19.jpg"></td>
+            <td><img src="pic20.jpg"></td>
+        </tr>
+        <tr>
+            <td><img src="pic21.jpg"></td>
+            <td><img src="pic22.jpg"></td>
+            <td><img src="pic23.jpg"></td>
+            <td><img src="pic24.jpg"></td>
+            <td><img src="pic25.jpg"></td>
+        </tr>
+    </table>
+</div>		
+	</article>
+  </article>
+</section>
+<footer>
+  <p>Dee Jay R. Pescadero | Copyright © 2022</p>
+</footer>
+
+</body>
+</html>

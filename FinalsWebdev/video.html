@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS Template</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Copperplate, Helvetica, sans-serif;
+    } 
+
+    /* Style the header */
+    header {
+      background-color: #8CC0DE;
+      padding: 20px;
+      text-align: center;
+      font-size: 25px;
+      color: black;
+      font-family: copperplate;
+    }
+
+    /* Create two columns/boxes that floats next to each other */
+    nav {
+      float: left;
+      width: 20%;
+      height: 500px; /* only for demonstration, should be removed */
+      background: #ffa500;
+      padding: 30px;
+    }
+
+    /* Style the list inside the menu */
+    nav ul {
+      list-style-type: none;
+      padding: 20px ;
+     
+      
+    }
+
+    article {
+      float: left;
+      padding: -1;
+      width: 80%;
+      background-color: #ff6666;
+      height: 500px; 
+      font-family: Garamond,serif;
+      font-size: 16px;/* only for demonstration, should be removed */
+    }
+
+    /* Clear floats after the columns */
+    section::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Style the footer */
+    footer {
+      background-color: lightblue;
+      padding: 5px;
+      text-align: center;
+      color: black;
+    }
+
+    /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+    @media (max-width: 600px) {
+      nav, article {
+        width: 100%;
+        height: auto;
+   }
+ }
+   a:hover {
+    color: blue;
+   }
+
+  button {
+  background-color: lightblue;
+  color: black;
+  padding:12px 18px;
+  margin:8px 0;
+  border:outset;
+  cursor:pointer;
+  width:100%;
+  font-size: 18px;
+  font-family: copperplate;
+  display:block;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: relative;
+  opacity: 0;
+  top: 0;
+  right: -30px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 10px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+} 
+form {
+	 	
+	 }
+
+	input[type=text], input[type=password] {
+	  width: 40%;
+	  padding: 12px 18px;
+	  margin: 8px 0;
+	  display: inline-block;
+	  border:  none;
+	  box-sizing: border-box;
+	}
+	.button1		 {
+	  background-color: lightblue;
+	  color: black;
+	  padding: 14px 15px;
+	  margin: 1px;
+	  border: none;
+	  cursor: pointer;
+	  width: 15%;
+	}
+  .container {
+  padding: 10px;
+}
+img.avatar {
+  width: 21%;
+  border-radius: 50%;
+}
+img {
+	width: 20%;
+	border-radius: 50%;
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h2>Videos</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><button class="button" style="vertical-align: middle;" onclick="document.location='home.html'"><span>Home</span>	</button></li>
+      <li><button class="button" style="vertical-align: middle;" onclick="document.location='login.html'">Login</button></li>
+      <li><button class="button" style="vertical-align: middle;" onclick="document.location='register.html'"><span>Register</span> </button></li>
+      <li><button class="button" style="vertical-align: middle;" onclick="document.location='pictures.html'"><span>Pictures</span> </button></li>
+      <li><button class="button" style="vertical-align: middle;" onclick="document.location='video.html'"><span>Videos</span></button></li>
+      <li><button class="button" style="vertical-align: middle;" onclick="document.location='music.html'"><span>Music</span> </button></li>
+    </ul>
+  </nav>
+  <article>
+    <form>
+  <div>
+  </div>
+  <center><h1>Video</h1>
+    <video width="520" height="340" controls>
+      <source src="Video.mp4"> 
+      Your browser does not support the video tag.
+    </video>
+</center>
+
+</form>
+    
+  </article>
+</section>
+<footer>
+  <p>Dee Jay R. Pescadero | Copyright © 2022</p>
+</footer>
+
+</body>
+</html>

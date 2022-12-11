@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>CSS Template</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Copperplate, Helvetica, sans-serif;
+    } 
+
+    /* Style the header */
+    header {
+      background-color: #8CC0DE;
+      padding: 20px;
+      text-align: center;
+      font-size: 25px;
+      color: black;
+      font-family: copperplate;
+    }
+
+    /* Create two columns/boxes that floats next to each other */
+    nav {
+      float: left;
+      width: 20%;
+      height: 615px; /* only for demonstration, should be removed */
+      background: #ffa500;
+      padding: 30px;
+    }
+
+    /* Style the list inside the menu */
+    nav ul {
+      list-style-type: none;
+      padding: 20px ;
+      
+    }
+    p {
+        letter-spacing: 2px;
+        line-height: 2px;
+    }
+    article {
+      float: left;
+      padding: -1;
+      width: 80%;
+      background-color: #ff6666;
+      height: 615px; 
+      font-family: Garamond,serif;
+      font-size: 16.7px;/* only for demonstration, should be removed */
+    }
+
+    /* Clear floats after the columns */
+    section::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+
+    /* Style the footer */
+    footer {
+      background-color: lightblue;
+      padding: 5px;
+      text-align: center;
+      color: black;
+    }
+
+    /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+    @media (max-width: 600px) {
+      nav, article {
+        width: 100%;
+        height: auto;
+   }
+ }
+   a:hover {
+    color: blue;
+   }
+
+  button {
+  background-color: lightblue;
+  color: black;
+  padding:12px 18px;
+  margin:8px 0;
+  border:outset;
+  cursor:pointer;
+  width:100%;
+  font-size: 18px;
+  font-family: copperplate;
+  display:block;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: relative;
+  opacity: 0;
+  top: 0;
+  right: -30px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 10px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+} 
+form 
+	input[type=text], input[type=password] {
+	  width: 40%;
+	  padding: 12px 18px;
+	  margin: 8px 0;
+	  display: inline-block;
+	  border:  none;
+	  box-sizing: border-box;
+	}
+	.button1		 {
+	  background-color: lightblue;
+	  color: black;
+	  padding: 14px 15px;
+	  margin: 1px;
+	  border: none;
+	  cursor: pointer;
+	  width: 15%;
+	}
+  .container {
+  padding: 10px;
+}
+img.avatar {
+  width: 21%;
+  border-radius: 50%;
+}
+img {
+	width: 20%;
+	border-radius: 50%;
+}
+
+  </style>
+</head>
+<body>
+
+<header>
+  <h2>Music</h2>
+</header>
+
+<section>
+  <nav>
+    <ul>
+      <li><button class="button" style="vertical-align: middle;" onclick="document.location='home.html'"><span>Home</span>	</button></li>
+      <li><button class="button" style="vertical-align: middle;" onclick="document.location='login.html'">Login</button></li>
+      <li><button class="button" style="vertical-align: middle;" onclick="document.location='register.html'"><span>Register</span> </button></li>
+      <li><button class="button" style="vertical-align: middle;" onclick="document.location='pictures.html'"><span>Pictures</span> </button></li>
+      <li><button class="button" style="vertical-align: middle;" onclick="document.location='video.html'"><span>Videos</span></button></li>
+      <li><button class="button" style="vertical-align: middle;" onclick="document.location='music.html'"><span>Music</span> </button></li>
+    </ul>
+  </nav>
+  <article>
+    <form>
+  <div>
+  </div>
+</form>
+  <article>
+  <center>
+    <h1>Music</h1>
+    <audio controls>
+      <source src="University of Cebu Hymn.mp3" type="audio/mp3">
+      Your browser does not support the audio element.
+    </audio>
+
+    <h1>University of Cebu Hymn</h1>
+      Mid these fair Visayan Isles</h1>
+   <p>Neath these azure blue skies</p>
+
+       <p>Stands UC our beloved</p>
+
+       <p>Lofty in all her glory</p>
+       <br>
+   <p>Sparks of wisdom, hope and joy</p>
+
+   <p>Always kindling in our hearts</p>
+
+  <p>Thy precious name, thy glorious fame</p>
+
+<p>Will shine through all eternity</p>
+             <br>
+<p>Thy name shall ever be our guide</p>
+
+<p>Thy light our inspiration</p>
+
+<p>Keep up the light a glowing bright</p>
+
+<p>To thy portals dear ALMA MATER</p>
+               <br>
+<p>Hail! Praises be to thee</p>
+
+<p>Onwards show us the way</p>
+
+<p>Faithful and true we'll always be</p>
+
+<p>To thee our ALMA MATER dear.</p>
+
+</center>
+</article>
+</section>
+<footer>
+  <p>Dee Jay R. Pescadero | Copyright © 2022</p>
+</footer>
+
+</body>
+</html>
